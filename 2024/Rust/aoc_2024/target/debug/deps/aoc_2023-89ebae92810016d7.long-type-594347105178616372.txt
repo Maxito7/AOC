@@ -1,0 +1,1 @@
+std::iter::MapWhile<std::io::Lines<std::io::BufReader<std::fs::File>>, fn(std::result::Result<std::string::String, std::io::Error>) -> std::result::Result<std::result::Result<std::string::String, std::io::Error>, _> {std::result::Result::<std::result::Result<std::string::String, std::io::Error>, _>::Ok}>
