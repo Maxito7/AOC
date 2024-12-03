@@ -1,5 +1,5 @@
 use aoc_2024::solutions;
 
 fn main() {
-    solutions::day_01::day01(1, Some("_test"), 2);
+    solutions::day_02::day02(2, None, 1);
 }

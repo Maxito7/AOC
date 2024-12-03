@@ -6,14 +6,19 @@ fn part1(data: &str) -> u64 {
     let _: Vec<_> = data
         .lines()
         .map(|line| {
-            let temp_arr: Vec<&str> = line.trim().split("   ").collect();
+            let temp_arr: (&str, &str) = line
+                .trim()
+                .split_once("   ")
+                .expect("Could not split the values found");
             left_row.push(
-                temp_arr[0]
+                temp_arr
+                    .0
                     .parse::<u64>()
                     .expect("Cannot parse the left row number"),
             );
             right_row.push(
-                temp_arr[1]
+                temp_arr
+                    .1
                     .parse::<u64>()
                     .expect("Cannot parse the right row number"),
             );
